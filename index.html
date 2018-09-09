@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FarmFresh</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="site">
+		<!-- Start site header -->
+		<div class="header">
+			<div class="header-banner">
+				<img src="img/FarmFresh Logo.png" />
+			</div>
+			<div class="search-form">
+			    <form action="">
+			      <input type="text" placeholder="Search for a product or brand" name="search"><button type="submit"><i class="fa fa-search"></i></button>
+			    </form>
+			 </div>
+			 <span class="shopping-cart">
+			 	<img src="img/shopping-cart.png" />
+			 </span>
+		</div>
+		<!-- End site header -->
+		<!-- Start loading banner -->
+		<div class="load">
+			<div class="loading-img"></div>	
+		</div>		
+		<!-- End loading banner -->
+		<!-- Start Promotional page -->
+		<div class="promo-part">
+			<div class="promo-banner">
+				<div class="quote">
+					<h1>FRESH FOOD FOR A FRESHER YOU</h1>
+					<h3>Quality food, Quality life</h3>
+				</div>
+				<div class="promo-bimg">
+					<img src="img/Side image.png" />
+				</div>
+			</div>
+			<ul class="service">
+				<li>
+					<div>
+						<img src="img/clock.png" />
+					</div>
+					<span>Online anywhere</span>
+				</li>
+				<li>
+					<div>
+						<img src="img/delivery-truck.png" />
+					</div>
+					<span>Fast Delivery</span>
+				</li>
+				<li>
+					<div>
+						<img src="img/support.png" />
+					</div>
+					<span>24/7 Support</span>
+				</li>
+			</ul>
+		</div>
+		<!-- End promotional page -->
+		<!-- Start shopping page -->
+		<div class="shopping-part">
+			<div class="navigation">
+				<ul id="nav-menu" class="nav-menu">
+					<li class="menu-item-has-child">
+						<a href="">On sales!</a>
+						<ul class="sub-menu">
+							<li><a href="">submenu1</a></li>
+							<li><a href="">submenu2</a></li>
+							<li><a href="">submenu3</a></li>
+						</ul>
+					</li>
+					<li><a href="">New</a></li>
+					<li><a href="">Shop by Store</a></li>
+					<li><a href="">Fruit and Veg</a></li>
+					<li><a href="">Meat & Seafood</a></li>
+					<li><a href="">Dairy and Chilled</a></li>
+					<li><a href="">Bakery</a></li>
+					<li><a href="">Beverages</a></li>
+				</ul>
+			</div>
+			<div class="item-list">
+				<ul class="items">
+					<li>
+						<div class="item-img">
+							<img src="img/Untitled-1.png" />
+						</div>
+						<h4>Ripe Blue Grape</h4>
+						<span>Packet</span>
+						<div class="pop-up">
+							<span class="close">&#x2715;</span>
+							<ul class="img-slide">
+								<li class="slider"><img src="img/Untitled-3.png" /></li>
+								<li class="slider"><img src="img/Untitled-8.jpg" /></li>
+								<li class="slider"><img src="img/Untitled-9.jpg" /></li>
+								<button class="left-btn" onclick="plusDivs(-1)">&#10094;</button>
+								<button class="right-btn" onclick="plusDivs(1)">&#10095;</button>
+							</ul>
+							<div class="description">
+								<h2>Ripe Blue Grapes</h2>
+								<h4>Packet of 1 bundle</h4>
+								<div class="grid-container">
+									<div class="grid-item">Key Information</div>
+									<div class="grid-item">Packet of 1 Bundle of Grapes</div>
+									<div class="grid-item">About the Product</div>  
+									<div class="grid-item"><p>From the heart of the french Alps after a journey of more than 70 years, springs this Ripe<span class="more" style="display: none;"> Blue Grapes. Thanks to this amazing journey through the Chambotte mountains, it acquires its unique fresgqualities. With our passion for preserving this natural heritage, we are proud to offer you this moment of purity in your busy lives.</span><button class="more-btn">...More</button></p></div> 
+									<div class="grid-item">Country of Origin</div>
+									<div class="grid-item">France</div>
+								</div>
+								<div class="add-cart">
+									<span>Qty</span>
+									<select>
+									  	<option value="volvo">1</option>
+									  	<option value="saab">2</option>
+									  	<option value="opel">3</option>
+									</select>
+									<button class="adding-btn">Add to cart</button>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-img">
+							<img src="img/Untitled-4.jpg" />
+						</div>
+						<h4>Spinach</h4>
+						<span>Packet</span>
+					</li>
+					<li>
+						<div class="item-img">
+							<img src="img/Untitled-7.png" />
+						</div>
+						<h4>Salmon</h4>
+						<span>Packet</span>
+					</li>
+					<li>
+						<div class="item-img">
+							<img src="img/Untitled-5.png" />
+						</div>
+						<h4>Capsicum</h4>
+						<span>Packet</span>
+					</li>
+					<li>
+						<div class="item-img">
+							<img src="img/Untitled-2.png" />
+						</div>
+						<h4>Tomato</h4>
+						<span>Packet</span>
+					</li>
+					<li>
+						<div class="item-img">
+							<img src="img/Untitled-6.jpg" />
+						</div>
+						<h4>Broccoli</h4>
+						<span>Packet</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- End shopping page -->
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		jQuery(function(){
+			$(window).scroll(function(){
+			    $(".loading-img")
+			      .css("background-size", (115 - 10 * $(window).scrollTop() / 450) + "%");
+
+			});
+
+			var nav = $('.site .shopping-part .navigation ul li');
+			nav.find('ul').hide();
+			nav.click(function () {
+				$('.site .shopping-part .navigation ul li').removeClass('active');
+				$(this).addClass('active');
+			    nav.not(this).find('ul').hide();
+			    $(this).find('ul').slideToggle();
+			});
+
+			$('.site .shopping-part .item-list ul li .item-img').click(function(){
+				$('.site .shopping-part .item-list ul li .item-img .pop-up').css('display','none');
+				$(this).parent().find('.pop-up').css('transform','scale(1)');
+			});
+			$('.more-btn').click(function () {
+			    $(this).hide();
+			    $('.more').show();
+			});
+			$('.pop-up .close').click(function () {
+			    $(this).parent().css('transform','scale(0)');
+			});
+		});
+
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("slider");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+	</script>
+</body>
+</html>
